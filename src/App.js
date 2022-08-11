@@ -1,14 +1,15 @@
 import './App.css';
+import React from 'react';
+import {RecoilRoot} from 'recoil';
+import { TodoList } from './components/TodoMain';
 
 function App() {
   return (
-    <div className="App">
-      <h1>demo</h1>
-      <h1>demo</h1>
-      <h1>demo</h1>
-      <h1>demo</h1>
-      <h1>demo</h1>
-    </div>
+    <RecoilRoot>
+      <div className="todo-container">
+        <TodoList />
+      </div>
+    </RecoilRoot>
   );
 }
 
